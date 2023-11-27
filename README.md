@@ -1,2 +1,2 @@
-# Learning-Management-System
+# Learning Management System - LMS
 Projekti per lenden Web
