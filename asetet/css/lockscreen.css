@@ -6,6 +6,47 @@
   font-family: "Roboto";
 }
 
+body {
+  display: flex;
+}
+
+.left-side {
+  width: 450px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px;
+}
+
+.right-side {
+  flex: 1;
+  height: 100vh;
+  background: url("../foto/clement-proust-CjAAw3IUlBw-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.white-logo {
+  padding: 20px;
+}
+
+.white-logo img {
+  width: 561px;
+  height: 169px;
+}
+
 .foto img {
   max-height: 194px;
   max-width: 194px;
@@ -16,30 +57,6 @@
 
 .foto {
   text-align: center;
-}
-
-.container {
-  height: 100vh;
-  width: 100%;
-  background-color: #f2f2f2;
-  background: url('../foto/clement-proust-CjAAw3IUlBw-unsplash.png');
-  object-fit: contain;
-}
-
-.form {
-  background: #fff;
-  max-width: 450px;
-  width: 100%;
-  height: 100%;
-  padding: 25px;
-}
-
-header {
-  font-size: 30px;
-  font-weight: 500;
-  color: #5b5b5b;
-  text-align: center;
-  margin-top: 10px;
 }
 
 .fusha {
@@ -105,4 +122,17 @@ button {
 .input::placeholder {
   color: #c5c5c5;
   font-size: 15px;
+}
+
+.titulli {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  /* Show right side when the screen is larger than 600px */
+  .right-side {
+    display: flex;
+  }
 }
