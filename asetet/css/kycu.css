@@ -1,91 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto";
 }
 
-body {
+.foto img {
+  max-height: 40px;
+  max-width: 133px;
+  height: 100%;
+  width: 100%;
+}
+
+.foto {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f2f2f2;
 }
 
-.container {
-  background-color: white;
-  filter: drop-shadow(0px 0px 10px #c5c5c5);
+.form {
+  border-radius: 5px;
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 50px;
 }
 
-.container {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 40px;
-  margin: 56px 184px 26px 183px;
-  width: 130px;
-}
-
-.titulli {
+header {
   font-size: 30px;
+  font-weight: 500;
   color: #5b5b5b;
-  margin: 0px 125px 20px 124px;
+  text-align: center;
+  margin-top: 26px;
 }
 
-.input-group {
-  margin: 0px 50px 18px 50px;
+.fusha {
+  /* height: 50px; */
+  width: 100%;
+  margin-top: 20px;
 }
 
-.input-group label {
+.btn {
+  margin-top: 20px;
+}
+
+.form-link {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 15px;
   color: #909090;
 }
 
-.input-text {
-  border: 1px solid #c5c5c5;
-  outline: none;
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
+.forgot-pass {
+  text-decoration: none;
+  color: #909090;
 }
 
-.input-text::placeholder {
+.forgot-pass:hover {
+  text-decoration: underline;
+  color: #6f97ff;
+}
+
+.input,
+button {
+  height: 100%;
+  width: 100%;
+  border: none;
   font-size: 15px;
-  color: #c5c5c5;
-  padding-left: 45px;
+  border-radius: 5px;
+  height: 50px;
+  color: #909090;
+}
+
+.input {
+  padding: 0 50px;
+  border: 1px solid #c5c5c5;
+}
+
+.fusha button {
+  background-color: #266185;
+  color: white;
+  cursor: pointer;
+}
+
+.fusha label {
+  font-size: 15px;
+  color: #909090;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fusha-icon {
+  position: relative;
+  margin: 0px;
 }
 
 .icon {
   position: absolute;
-  height: 24px;
+  color: #c5c5c5;
   width: 24px;
-  padding: 15px;
-  color: #c5c5c5;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
-.input-adicionet {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 50px 26px 50px;
+.input:focus {
+  outline: none;
+  border: 2px solid #6f97ff;
 }
 
-.me-kujto label {
-  color: #c5c5c5;
-}
-
-.harruar-fjalekalimin a {
-  color: #c5c5c5;
-}
-
-.btn {
-  width: 400px;
-  height: 50px;
-  background-color: #266185;
-  margin: 0px 50px 0px 50px;
-  color: white;
-  font-size: 30px;
+.input::placeholder {
+  color: #C5C5C5;
+  font-size: 15px;
 }
