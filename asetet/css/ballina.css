@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+:root {
+  --bg-color: #f6f6f6;
+  --primary-color: #1d597d;
+  --accent-color: #83b6b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 0.5px;
+  background-color: var(--bg-color);
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.header {
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ana-majt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Black Ops One";
+  color: var(--bg-color);
+  text-decoration: none;
+  font-size: 3rem;
+  margin-top: 3px;
+}
+
+.ikona-hamburger {
+  color: var(--bg-color);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px 20px 0px 10px;
+}

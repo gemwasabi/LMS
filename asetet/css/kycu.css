@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: white;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 40px;
+  margin: 56px 184px 26px 183px;
+  width: 130px;
+}
+
+.titulli {
+  font-size: 30px;
+  color: #5b5b5b;
+  margin: 0px 125px 20px 124px;
+}
+
+.input-group {
+  margin: 0px 50px 18px 50px;
+}
+
+.input-group label {
+  font-size: 15px;
+  color: #909090;
+}
+
+.input-text {
+  border: 1px solid #c5c5c5;
+  outline: none;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.input-text::placeholder {
+  font-size: 15px;
+  color: #c5c5c5;
+  padding-left: 45px;
+}
+
+.icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  padding: 15px;
+  color: #c5c5c5;
+}
+
+.input-adicionet {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 26px 50px;
+}
+
+.me-kujto label {
+  color: #c5c5c5;
+}
+
+.harruar-fjalekalimin a {
+  color: #c5c5c5;
+}
+
+.btn {
+  width: 400px;
+  height: 50px;
+  background-color: #266185;
+  margin: 0px 50px 0px 50px;
+  color: white;
+  font-size: 30px;
+}
