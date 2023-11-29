@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+}
+
+.left-side {
+  width: 450px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px;
+}
+
+.right-side {
+  flex: 1;
+  height: 100vh;
+  background: url("../foto/clement-proust-CjAAw3IUlBw-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.white-logo {
+  padding: 20px;
+}
+
+.white-logo img {
+  width: 561px;
+  height: 169px;
+}
+
+.foto img {
+  max-height: 194px;
+  max-width: 194px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.foto {
+  text-align: center;
+}
+
+.fusha {
+  /* height: 50px; */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.input,
+button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 50px;
+  color: #909090;
+}
+
+.input {
+  padding: 0 50px;
+  border: 1px solid #c5c5c5;
+}
+
+.fusha button {
+  background-color: #266185;
+  color: white;
+  cursor: pointer;
+}
+
+.fusha label {
+  font-size: 15px;
+  color: #909090;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fusha-icon {
+  position: relative;
+  margin: 0px;
+}
+
+.icon {
+  position: absolute;
+  color: #c5c5c5;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #6f97ff;
+}
+
+.input::placeholder {
+  color: #c5c5c5;
+  font-size: 15px;
+}
+
+.titulli {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  /* Show right side when the screen is larger than 600px */
+  .right-side {
+    display: flex;
+  }
+}
