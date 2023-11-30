@@ -21,7 +21,7 @@ body {
   background-color: var(--bg-secondary-color);
 }
 
-/*-------------- Side Bar -------------------------*/
+/*-------------- Nav Bar -------------------------*/
 
 .navbar {
   position: fixed;
@@ -79,7 +79,7 @@ body {
   z-index: 100;
   overflow-y: scroll;
   box-shadow: 0 0 1px var(--accent-color);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .sidebar.close {
   padding: 60px 0;
@@ -167,7 +167,7 @@ body {
   left: 0;
   width: 260px;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .bottom {
   position: absolute;
@@ -213,3 +213,111 @@ body {
 }
 
 /* --------------------- Content ------------------- */
+
+main {
+  margin-top: 6rem;
+  margin-right: 9rem;
+  margin-left: 9rem;
+}
+
+/* ------------------------ Profile Page ---------------------- */
+
+.topProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profileLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profileLeft span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topProfile button {
+  border: none;
+  background-color: #266185;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.topProfile button:hover {
+  background-color: #1c455f;
+  transition: 0.3s ease;
+}
+
+.profileIMG {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.midProfile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.midLeft,
+.midRight {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.midLeft p,
+.midRight p {
+  margin-bottom: 10px;
+}
+
+.s_d {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.p_d {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.midProfile input {
+  border: none;
+  height: 30px;
+  cursor: not-allowed;
+  border: 1px solid #c5c5c5;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.midProfile input::placeholder {
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .topProfile button {
+    margin-bottom: 0;
+  }
+
+  .midProfile {
+    flex-direction: row;
+  }
+
+  .midLeft,
+  .midRight {
+    margin-right: 1.5rem;
+  }
+}
