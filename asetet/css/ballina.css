@@ -272,7 +272,7 @@ body {
   color: white !important;
 }
 
-.right button {
+.btn {
   font-size: 1.1rem;
   border: none;
   background-color: #6f97ff;
@@ -284,7 +284,7 @@ body {
   border-radius: 10px;
 }
 
-.right button i {
+.btn i {
   padding-right: 0.3rem;
 }
 
@@ -347,14 +347,172 @@ body {
   color: #909090;
 }
 
-.card-body .right .card-p-role {
+.p-role {
   font-size: 0.8rem;
   font-weight: 500;
   color: #909090;
 }
 
-.card-body .right .card-p-name {
+.p-name {
   font-size: 1.1rem;
   font-weight: 500;
   color: #5b5b5b;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  width: 60%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-body .left {
+  width: 70%;
+  padding: 15px;
+}
+
+.modal-body .right {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-body .right i {
+  font-size: 5rem;
+  color: #909090;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #909090;
+}
+
+.card-meta {
+  color: #909090;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.card-meta i {
+  font-size: 1rem;
+}
+
+.modal-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5b5b5b;
+}
+
+.modal-text {
+  color: #909090;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.attachment-content {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.attachment {
+  text-align: center;
+  margin-right: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: #f9f9f9;
+}
+
+.attachment i {
+  font-size: 3rem;
+  color: #909090;
+}
+
+.card-separator {
+  color: #5b5b5b;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.modal-footer {
+  padding: 15px;
+}
+
+.btn-square {
+  border: none;
+  background-color: #6f97ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn i {
+  padding-right: 0.3rem;
 }
