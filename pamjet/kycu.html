@@ -17,25 +17,31 @@
             </div>
             <header>Kyçuni në program</header>
 
-            <form action="#">
+            <form action="/" onsubmit="return validateForm()">
                 <div class="fusha">
-                    <label for="">Email</label>
+                    <label for="email">Email</label>
                     <div class="fusha-icon">
                         <span class="material-symbols-outlined icon">email</span>
-                        <input type="email" class="input" placeholder="Email">
+                        <input type="email" id="email" class="input" placeholder="Email" oninput="validateEmail()">
                     </div>
+                    <div class="error" id="emailError"></div>
                 </div>
+
                 <div class="fusha">
-                    <label for="">Fjalëkalimi</label>
+                    <label for="password">Fjalëkalimi</label>
                     <div class="fusha-icon">
                         <span class="material-symbols-outlined icon">lock</span>
-                        <input type="password" class="input" placeholder="Fjalëkalimi">
+                        <input type="password" id="password" class="input" placeholder="Fjalëkalimi"
+                            oninput="validatePassword()">
                     </div>
+                    <div class="error" id="passwordError"></div>
                 </div>
+
                 <div class="form-link">
                     <span class="ruaj-te-dhenat"><input type="checkbox"> Ruaj të dhënat</span>
                     <a href="#" class="forgot-pass">Ke harruar fjalëkalimin?</a>
                 </div>
+
                 <div class="fusha btn">
                     <button type="submit">Kyçu</button>
                 </div>
@@ -43,5 +49,45 @@
         </div>
     </section>
 </body>
+<script>
+    function validateEmail() {
+        var emailInput = document.getElementById('email');
+        var emailError = document.getElementById('emailError');
+
+        var emailRegex = /[a-zA-Z0-9._-]+@+[a-z]+\.+[a-z]{2,4}$/;
+
+        if (emailRegex.test(emailInput.value)) {
+            emailInput.classList.remove('invalid');
+            emailError.style.display = 'none';
+        } else {
+            emailInput.classList.add('invalid');
+            emailError.style.display = 'block';
+            emailError.textContent = 'Ju lutem kontrolloni emailin!';
+        }
+    }
+
+    function validatePassword() {
+        var passwordInput = document.getElementById('password');
+        var passwordError = document.getElementById('passwordError');
+
+        var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+        if (passwordRegex.test(passwordInput.value)) {
+            passwordInput.classList.remove('invalid');
+            passwordError.style.display = 'none';
+        } else {
+            passwordInput.classList.add('invalid');
+            passwordError.style.display = 'block';
+            passwordError.textContent = 'Ju lutem kontrolloni fjalekalimin!';
+        }
+    }
+
+    function validateForm() {
+        validateEmail();
+        validatePassword();
+
+        return !(document.querySelectorAll('.input.invalid').length > 0);
+    }
+</script>
 
 </html>
