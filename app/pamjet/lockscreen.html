@@ -17,13 +17,15 @@
                 <img src="../asetet/foto/user.jpg" alt="">
             </div>
             <p class="titulli">Përshëndetje, Filan!</p>
-            <form action="#">
+            <form action="#" onsubmit="return validateForm()">
                 <div class="fusha">
                     <label for="">Fjalëkalimi</label>
                     <div class="fusha-icon">
                         <span class="material-symbols-outlined icon">lock</span>
-                        <input type="password" class="input" placeholder="Fjalëkalimi">
+                        <input type="password" id="password" class="input" placeholder="Fjalëkalimi"
+                            oninput="validatePassword()">
                     </div>
+                    <div class="error" id="passwordError"></div>
                 </div>
                 <div class="fusha btn">
                     <button type="submit">Kyçu</button>
@@ -38,6 +40,30 @@
             <img src="../asetet/foto/lms-white.png" alt="">
         </div>
     </div>
+
+    <script>
+        function validatePassword() {
+            var passwordInput = document.getElementById('password');
+            var passwordError = document.getElementById('passwordError');
+
+            var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+            if (passwordRegex.test(passwordInput.value)) {
+                passwordInput.classList.remove('invalid');
+                passwordError.style.display = 'none';
+            } else {
+                passwordInput.classList.add('invalid');
+                passwordError.style.display = 'block';
+                passwordError.textContent = 'Ju lutem kontrolloni fjalekalimin!';
+            }
+        }
+
+        function validateForm() {
+            validatePassword();
+
+            return !(document.querySelectorAll('.input.invalid').length > 0);
+        }
+    </script>
 </body>
 
 </html>

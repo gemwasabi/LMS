@@ -122,6 +122,17 @@ button {
 }
 
 .input::placeholder {
-  color: #C5C5C5;
+  color: #c5c5c5;
   font-size: 15px;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.input.invalid {
+  border: 1px solid red;
 }

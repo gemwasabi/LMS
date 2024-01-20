@@ -124,6 +124,17 @@ button {
   font-size: 15px;
 }
 
+.error {
+  display: none;
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.input.invalid {
+  border: 1px solid red;
+}
+
 .titulli {
   font-size: 30px;
   font-weight: 500;
