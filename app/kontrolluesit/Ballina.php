@@ -20,8 +20,4 @@ class Ballina extends Kontrolluesi
         $this->shfaq('ballina');
     }
     
-    function seadi()
-    {
-        echo '<pre>';print_r('HELLO');die;
-    }
 }
