@@ -1,0 +1,8 @@
+RewriteEngine On
+
+#prano shfaqjen e fajllave dhe direktoriumeve ekzistuese
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#dergo cdo gje tjeter ne faqen e index
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
