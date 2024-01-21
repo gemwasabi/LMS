@@ -1,10 +1,10 @@
 <?php
 
-class Ballina_model
+class Perdoruesit_model
 {
     use Modeli;
 
-    protected $tabela = 'users';
+    protected $tabela = 'perdoruesit';
     protected $fushat_lejuara = [
         'username',
         'email',

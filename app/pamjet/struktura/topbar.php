@@ -4,6 +4,6 @@
         </div>
         <div class="right">
             <i class="material-symbols-outlined icon">notifications</i>
-            <img class="user-img" src="../asetet/foto/user.jpg" alt="">
+            <img class="user-img" src="<?= ROOT ?>/asetet/foto/user.jpg" alt="">
         </div>
     </div>

@@ -5,7 +5,7 @@
             </div>
         </div>
         <div class="user">
-            <img class="user-img" src="../asetet/foto/user.jpg" alt="">
+            <img class="user-img" src="<?= ROOT ?>/asetet/foto/user.jpg" alt="">
             <div>
                 <p class="bold">Filan Fisteku</p>
                 <p class="bold">filanfisteku@gmail.com</p>

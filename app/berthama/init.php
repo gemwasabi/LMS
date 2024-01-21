@@ -1,7 +1,14 @@
 <?php
 
 spl_autoload_register(function ($emri_klases) {
-    require "../app/modelet/" . ucfirst($emri_klases) . ".php";
+    $modelet_file = "../app/modelet/" . ucfirst($emri_klases) . ".php";
+    $libraria_file = "../app/libraria/" . ucfirst($emri_klases) . ".php";
+
+    if (file_exists($modelet_file)) {
+        require $modelet_file;
+    } elseif (file_exists($libraria_file)) {
+        require $libraria_file;
+    }
 });
 
 require 'konfigurimet.php';
