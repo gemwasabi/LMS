@@ -1,3 +1,5 @@
+</body>
+
 <script>
     let btn = document.querySelector('#btn');
     let sidebar = document.querySelector('.sidebar');
@@ -24,3 +26,5 @@
         }
     } 
 </script>
+
+</html>

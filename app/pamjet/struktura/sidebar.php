@@ -5,7 +5,7 @@
             </div>
         </div>
         <div class="user">
-            <img class="user-img" src="../../public/asetet/foto/user.jpg" alt="">
+            <img class="user-img" src="../asetet/foto/user.jpg" alt="">
             <div>
                 <p class="bold">Filan Fisteku</p>
                 <p class="bold">filanfisteku@gmail.com</p>
@@ -54,13 +54,4 @@
                 <span class="tooltip">Sfondi</span>
             </li>
         </ul>
-    </div>
-    <div class="topbar">
-        <div class="left">
-            <a id="btn" href="javascript: void(0);"><i class="material-symbols-outlined icon">menu</i></a>
-        </div>
-        <div class="right">
-            <i class="material-symbols-outlined icon">notifications</i>
-            <img class="user-img" src="../../public/asetet/foto/user.jpg" alt="">
-        </div>
     </div>
