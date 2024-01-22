@@ -4,11 +4,13 @@ class Perdoruesit extends Kontrolluesi
 {
     private $kerkesa;
     private $perdoruesit_model;
+    private $flash;
 
     function __construct()
     {
         $this->kerkesa = new Kerkesa;
         $this->perdoruesit_model = new Perdoruesit_model;
+        $this->flash = new Flash;
     }
 
     function kycu()
@@ -30,7 +32,8 @@ class Perdoruesit extends Kontrolluesi
                 $_SESSION['mbiemri'] = $rezultati['mbiemri'];
                 $_SESSION['emaili'] = $rezultati['emaili'];
 
-                header('Location: dsadsa');
+                $this->flash->krijo('success', 'Ju jeni kycur me sukses!');
+                header('Location: ../ballina');
             } else {
                 $data['error'] = 'Llogaria e shkruar nuk ekziston!';
             }

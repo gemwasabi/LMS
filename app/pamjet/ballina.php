@@ -1,3 +1,13 @@
+<?php
+$flash = new Flash;
+
+$x = $flash->merr('success');
+
+if ($x) {
+    echo "<h1>$x</h1>";
+}
+?>
+
 <div class="main-content">
     <div class="container">
         <div class="breadcrumbs">
