@@ -4,6 +4,15 @@
         </div>
         <div class="right">
             <i class="material-symbols-outlined icon">notifications</i>
-            <img class="user-img" src="<?= ROOT ?>/asetet/foto/user.jpg" alt="">
+            
+            <div class="dropdown">
+                <img class="user-img profile" src="<?= ROOT ?>/asetet/foto/user.jpg" alt="">
+                <div class="content">
+                    <a href="">Log Out <span class="material-symbols-outlined">
+                        logout
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
