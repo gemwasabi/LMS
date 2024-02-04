@@ -39,7 +39,7 @@ header {
   font-weight: 500;
   color: #5b5b5b;
   text-align: center;
-  margin-top: 26px;
+  margin: 26px 0px;
 }
 
 .fusha {
@@ -135,4 +135,24 @@ button {
 
 .input.invalid {
   border: 1px solid red;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
 }

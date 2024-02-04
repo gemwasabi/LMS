@@ -2,28 +2,25 @@
 
 class Ballina extends Kontrolluesi
 {
+
+    private $postimet_model;
+
+    function __construct()
+    {
+        $this->postimet_model = new Postimet_model;
+    }
+
     function index()
     {
-        // echo '<pre>';print_r('po');die;
-        // $model = new Ballina_model;
-     
-        // $arr = [
-        //     'username' => 'gem',
-        //     'email' => 'gem@gme.com',
-        //     'password' => '12345'
-        // ];
-        
-        // $x = $model->fut($arr);
-        // echo '<pre>';
-        // print_r($x);
-        // die;
-        // $this->shfaq('ballina');
+        if (!isset($_SESSION['emri'])) {
+            header('location: ' . ROOT . '/perdoruesit/kycu');
+            exit;
+        }
 
-        $x = [
-            'titulli' => 'Ballina'
-        ];
+        $data['titulli'] = 'Ballina';
+        $data['postimet'] = $this->postimet_model->merr_postimet_perdoruesit($_SESSION['id']);
 
-        $this->shfaq_kornizat('ballina', $x);
+        $this->shfaq_kornizat('ballina', $data);
     }
-    
+
 }

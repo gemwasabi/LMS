@@ -57,7 +57,7 @@ trait Modeli
         return false;
     }
 
-    function perditeso($id, $data, $kolona_id = 'user_id')
+    function perditeso($id, $data, $kolona_id = 'id')
     {
         $celesat = array_keys($data);
         $query = "update $this->tabela set ";
@@ -70,12 +70,11 @@ trait Modeli
         $query .= " where $kolona_id = :$kolona_id";
 
         $data[$kolona_id] = $id;
-
         $rezultati = $this->query($query, $data);
         return $rezultati;
     }
 
-    function shlyej($id, $kolona_id = 'user_id')
+    function shlyej($id, $kolona_id = 'id')
     {
         $data[$kolona_id] = $id;
         $query = "delete from $this->tabela where $kolona_id = :$kolona_id";

@@ -4,7 +4,7 @@ class Kontrolluesi
 {
     public function shfaq_kornizat($emri, $data = false)
     {
-        $emri_skedarit = "../app/pamjet/" . $emri . ".PHP";
+        $emri_skedarit = "../app/pamjet/" . $emri . ".php";
 
         if (file_exists($emri_skedarit)) {
             if ($data) {

@@ -21,9 +21,9 @@
 
             <form action="kycu" method="POST">
                 <?php if (isset($error)): ?>
-                    <h1>
+                    <div class="alert alert-error">
                         <?= $error ?>
-                    </h1>
+                    </div>
                 <?php endif; ?>
                 <div class="fusha">
                     <label for="">Email</label>

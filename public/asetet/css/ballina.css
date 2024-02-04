@@ -313,16 +313,18 @@ body {
   color: white !important;
 }
 
-.btn {
+.btn,
+.btn a {
   font-size: 1.1rem;
   border: none;
   background-color: #6f97ff;
   color: white;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn i {
@@ -335,8 +337,8 @@ body {
   border-radius: 15px;
   border: #d9d9d9 dashed 1px;
   margin: 1rem 0;
-  cursor: pointer;
   transition: padding 0.5s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -556,4 +558,96 @@ body {
 
 .btn i {
   padding-right: 0.3rem;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* Apply Bootstrap-like styling to all tables */
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+/* Add some padding and center text in the table cells */
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Add borders to table cells */
+th,
+td {
+  border: 1px solid #dee2e6;
+}
+
+/* Add some styling for table headers */
+thead {
+  background-color: #266185; /* Updated color */
+  color: #fff;
+}
+
+/* Style even rows with a light background color */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Style the table header cells in a more prominent color */
+thead th {
+  background-color: #266185; /* Updated color */
+  color: #fff;
+  border: 1px solid #266185; /* Updated border color */
+}
+
+/* Add some spacing between bordered cells */
+th,
+td {
+  border: 1px solid #6f97ff; /* Updated border color */
+}
+
+/* Optional: Add a bit of rounded corners for a modern look */
+table {
+  border-radius: 0.25rem;
+}
+
+/* Optional: Add some space around the table */
+.container {
+  /* margin-top: 2rem; */
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
